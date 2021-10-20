@@ -37,7 +37,7 @@ public class Employee {
 	
 	@ElementCollection
 	@CollectionTable(name = "emp_task_table" , joinColumns = @JoinColumn(name="emp_id"))
-	@Column(name = "emp_task")
+	@Column(name = "emp_task", length = 25)
 	@OrderColumn(name = "pos")
 	private List<String> empTask;
 	
